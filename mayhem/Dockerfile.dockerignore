@@ -1,0 +1,13 @@
+# BuildKit uses this file (not the root .dockerignore) when building -f mayhem/Dockerfile.
+# Keep .git in the build context (grader / PATCH tier need history).
+build/
+out/
+target/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+.DS_Store
+*.swp
+*~

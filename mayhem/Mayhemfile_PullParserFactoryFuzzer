@@ -1,0 +1,9 @@
+project: xmlpull-api-v1
+target: PullParserFactoryFuzzer
+cmds:
+- cmd: /mayhem/PullParserFactoryFuzzer
+  libfuzzer: true
+  env:
+    TMPDIR: /dev/shm
+    HOME: /dev/shm
+    JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/dev/shm
